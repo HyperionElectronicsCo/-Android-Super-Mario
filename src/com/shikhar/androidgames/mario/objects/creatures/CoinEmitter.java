@@ -112,8 +112,8 @@ public class CoinEmitter extends Creature {
 		for (int i = 0; i <= n; i++) {
 			float v=(float) (0.32f+0.025f*Math.random());
 			theta=(float) ((0.30+0.4*i/n)*Math.PI);
-			dx=0.30f*v*FloatMath.cos(theta);
-			dy=-v*FloatMath.sin(theta);
+			dx=0.30f*v*(float)Math.cos(theta);
+			dy=-v*(float)Math.sin(theta);
 			c=new Coin(x,(int)getY(),dx,dy);
 			c.setIsAlwaysRelevant(true);
 			map.creaturesToAdd().add(c);
