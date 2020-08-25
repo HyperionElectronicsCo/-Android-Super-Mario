@@ -87,9 +87,9 @@ public class Score extends Creature {
 		if(type!=0){
 			if (t<0.8)t+=time/1000.0f;
 			if (type>0)
-				y= initY-15+15*FloatMath.cos(4*t);
+				y= initY-15+15*(float)Math.cos(4*t);
 			else{
-				y= initY-25+25*FloatMath.cos(4*t);
+				y= initY-25+25*(float)Math.cos(4*t);
 			}
 			return;
 		}
