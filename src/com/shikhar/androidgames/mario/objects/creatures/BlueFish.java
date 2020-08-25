@@ -90,7 +90,7 @@ public class BlueFish extends Creature {
 				if (Math.random()>0.98){
 	        	   map.creaturesToAdd().add(new BubbleParticle((int)getX(), (int)getY()));
 				}
-				y=(initY+6*android.util.FloatMath.sin(x/7));
+				y=(initY+6*(float)Math.sin(x/7));
 
 			}
 		}
